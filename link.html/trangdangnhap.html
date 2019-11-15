@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>U&S - BIỂU MẪU</title>
+    <link rel="icon" href="../images/icon tab.png" />
+    <link href="../css/index-thien.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header style="width:100%;background-color:aliceblue;position:relative;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6  col-md-6 col-ms-6 col-xs-6">
+                    <a href="../index.html"><img title="về trang chủ" style="margin:10px 0px 10px 100px;height:100px;width:100px;" src="../images/homepage.png" /></a>
+                </div>
+
+                <div align="right" class="col-lg-6  col-md-6 col-ms-6 col-xs-6">
+                    <ul class="tt">
+                        <li>
+                            <a href="#">Thông tin</a>
+                        </li>
+                        <li>
+                            <a href="#">Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="#">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="height:81.9%" class="than">
+
+    </main>
+    <footer style="z-index:1">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+                    </div>
+                    <div align="center" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <form action="index-thien.html" method="get" name="frmdangnhap" onsubmit="return kiemtra();" style="margin-top:80px;width:100%;">
+                            <!-- action là để đi đến 1 trang web khác(đưa đường dẫn nó), method là phương thức, đặt table trong thẻ form để nó "nhập lại" hay "đồng ý" sẽ chạy-->
+                            <table  width="80%" height="220" border="0" cellpadding="5" align="center" style="background-color:rgba(201,205,216,0.5);;border-radius:10px;filter:blur(0px);" class="tb">
+                                <tr>
+                                    <th style="text-align:center" colspan="2"><b>ĐĂNG NHẬP</b></th> <!-- để chữ "ĐĂNG KÝ" nằm ở giữa -->
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Tài khoản</b></td>
+                                    <td align="center">
+                                        <input type="text" id="hoten" name="txthoten" size="30" placeholder="Nhập tài khoản/Email">
+                                        
+                                        <div id="canhbaohoten"></div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Mật khẩu</b></td>
+                                    <td align="center">
+                                        <input type="password" id="mk" name="txtpass" pattern="^[A-Z].+" size="30" placeholder="Nhập mật khẩu"><br />
+                                        <div id="canhbaodn"></div>
+                                        <div id="canhbaomk"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <a style="color:blue;text-decoration:none;" href="forgetpass.html">Quên mật khẩu</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <input type="reset" value="Nhập lại" /> &nbsp;
+                                        <!-- nbsp là tạo khoảng trắng giữa Nhập lại và Đồng ý-->
+                                        <input type="submit" value="Đăng nhập" />
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <p style="text-align:center ;color:red">Chưa có tài khoản?</p>
+
+                                        <a style="color:blue;text-decoration:none;" href="trangdangky.html" />Đăng ký</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div align="center" style="margin-top:120px;" class="col-lg-12 col-md-12 col-sm-12 col=xs-12">
+                        <b style="margin-top:20px;color:yellow;font-size:20px;padding:5px 5px 5px 5px;">by U&S</b>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        function kiemtra() {
+            //alert ("trong function");
+            //document.frmdangky.txtmasv.value;
+            var obj = document.frmdangnhap;
+
+
+            if (document.getElementById("hoten").value == "") {
+                //alert('gia tri rong');
+                obj.txthoten.focus();
+                document.getElementById("canhbaohoten").innerHTML = "họ tên không được để trống";
+                document.getElementById("canhbaohoten").style.color = "red";
+                return false;
+            }
+            if (obj.txtpass.value == "") {
+                obj.txtpass.focus();
+                document.getElementById("canhbaomk").innerHTML = "mật khẩu không được để trống";
+                document.getElementById("canhbaomk").style.color = "red";
+                document.getElementById("canhbaohoten").innerHTML = "";
+                return false;
+            }
+            if (document.getElementById("hoten").value != "vanthien0812"||obj.txtpass.value != "Thienloi11a1") {
+                //alert('gia tri rong');
+                obj.txthoten.focus();
+                document.getElementById("canhbaodn").innerHTML = "sai mật khẩu hoặc tên đăng nhập";
+                document.getElementById("canhbaodn").style.color = "red";
+                document.getElementById("canhbaohoten").innerHTML = "";
+                document.getElementById("canhbaomk").innerHTML = "";
+                return false;
+            }
+             
+            document.getElementById("canhbaodn").innerHTML = "";
+            alert('vui lòng chờ')
+            return true;
+        }
+    </script>
+</body>
+
+</html>

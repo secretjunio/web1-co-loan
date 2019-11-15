@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>ADMINISTRATOR</title>
+    <link rel="icon" href="../images/icon tab.png" />
+    <script src="../js/JavaScript1.js"></script>
+    <link href="../css/admin.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript">
+        function Redirect() {
+            var b = document.getElementById("tk").value;
+
+            if (b == "áo nam" || b == "nam") {
+                window.location = "../link.html/male-logout.html";
+            }
+            else if (b == "áo nữ" || b == "nữ") {
+                window.location = "../link.html/female-logout.html";
+            }
+            else if (b == "giày") {
+                window.location = "../đi kèm/giày.html";
+            }
+            else if (b == "balo" || b == "túi xách") {
+                window.location = "../đi kèm/balo.html";
+            }
+            else if (b == "áo khoác") {
+                window.location = "../đi kèm/áo khoác.html";
+            }
+            else if (b == "khách hàng") {
+                window.location = "quanly/quanlykhachhang.html";
+            }
+            else if (b == "đơn hàng") {
+                window.location = "quanly/quanlydonhang.html";
+            }
+            else {
+                alert("từ khóa tìm kiếm không tồn tại");
+            }
+        }
+
+        var a = true;
+        function menu1() {
+            if (a) {
+                document.getElementById("ul1").style.display = "block";
+                document.getElementById("chevron-r1").style.display = "none";
+                document.getElementById("chevron-d1").style.display = "block";
+                a = false;
+            } else {
+                document.getElementById("ul1").style.display = "none";
+                document.getElementById("chevron-r1").style.display = "block";
+                document.getElementById("chevron-d1").style.display = "none";
+                a = true;
+            }
+        }
+
+        var c = true;
+        function menu2() {
+            if (c) {
+                document.getElementById("ul2").style.display = "block";
+                document.getElementById("chevron-r2").style.display = "none";
+                document.getElementById("chevron-d2").style.display = "block";
+                c = false;
+            } else {
+                document.getElementById("ul2").style.display = "none";
+                document.getElementById("chevron-r2").style.display = "block";
+                document.getElementById("chevron-d2").style.display = "none";
+                c = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header style="position:fixed">
+            <div class="row">
+                <div align="center" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="giao diện admin.html">
+                        <img style="height:15%;width:15%;border-radius:50%;" src="../images/homepage.png" />
+                        <b style="font-family: 'Kaushan Script', cursive;font-size:25px;margin-top:10px;">UNIQUE & STRANGER</b>
+                    </a>
+                </div>
+
+                <div style="margin-top:1.5%;" align="right" class="col-lg-4 col-xs-4 col-md-4">
+                    <form style="float:right" name="frmtimkiem" class="search" onsubmit="Redirect(); return false;">
+                        <input id="tk" class="timkiem" name="timkiem" type="text" placeholder="Tìm kiếm..." />
+                        <img onclick="Redirect(); return false;" style="height:25px;width:9%" src="../images/images.png" />
+                    </form>
+                </div>
+                <div align="center" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="admin.html">
+                        <img title="Administrator" style="height:15%;width:15%;border-radius:50%" src="../images/mikoto-misaka-ruiko-saten-kuroko-shirai-a-certain-scientific-railgun-character-avatar-login.jpg" />
+                        <b>Quản trị viên</b>
+                    </a>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section style="background-color:black;position:fixed;width:10%;height:100%;left:0;z-index:1">
+            <ul class="menu">
+                <li>
+                    <a onclick="menu1()" href="#">
+                        <i id="chevron-r1" style="color:white;" class="fas fa-chevron-right"></i>
+                        <i id="chevron-d1" style="color:white;display:none;" class="fas fa-chevron-down"></i>
+                        Trang chính
+                    </a>
+                    <ul id="ul1">
+                        <li>
+                            <a href="admin.html">
+                                Admin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html">
+                                Khách hàng
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a onclick="menu2()" href="#">
+                        <i id="chevron-r2" style="color:white;" class="fas fa-chevron-right"></i>
+                        <i id="chevron-d2" style="color:white;display:none;" class="fas fa-chevron-down"></i>
+                        Quản lý
+                    </a>
+                    <ul id="ul2">
+                        <li>
+                            <a href="admin.html">
+                                Admin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quanly/quanlysanpham.html">
+                                Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quanly/quanlysanpham.html">
+                                Khách hàng
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quanly/quanlydonhang.html">
+                                Đơn hàng
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="total.html">
+                        Tổng kết
+                    </a>
+                </li>
+                <li>
+                    <a href="report.html">
+                        Báo cáo
+                    </a>
+                </li>
+                <li>
+                    <a href="note.html">
+                        Ghi chú
+                    </a>
+                </li>
+                
+            </ul>
+        </section>
+        <section style="margin-top:64px;" align="center">
+            
+        </section>
+    </main>
+</body>
+</html>

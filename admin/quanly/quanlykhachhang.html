@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>ADMINISTRATOR-QUẢN LÝ KHÁCH HÀNG</title>
+    <link rel="icon" href="../../images/icon tab.png" />
+    <script src="../../js/JavaScript1.js"></script>
+    <link href="../../css/admin.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header style="position:fixed">
+        <div class="row">
+            <div align="center" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <a href="../giao diện admin.html">
+                    <img style="height:15%;width:15%;border-radius:50%;" src="../../images/homepage.png" />
+                    <b style="font-family: 'Kaushan Script', cursive;font-size:25px;margin-top:10px;">UNIQUE & STRANGER</b>
+                </a>
+            </div>
+
+            <div style="margin-top:1.5%;" align="right" class="col-lg-4 col-xs-4 col-md-4">
+                <form style="float:right" name="frmtimkiem" class="search" onsubmit="Redirect(); return false;">
+                    <input id="tk" class="timkiem" name="timkiem" type="text" placeholder="Tìm kiếm..." />
+                    <img onclick="Redirect(); return false;" style="height:25px;width:9%" src="../../images/images.png" />
+                </form>
+            </div>
+            <div align="center" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <a href="admin.html">
+                    <img title="Administrator" style="height:15%;width:15%;border-radius:50%" src="../../images/mikoto-misaka-ruiko-saten-kuroko-shirai-a-certain-scientific-railgun-character-avatar-login.jpg" />
+                    <b>Quản trị viên</b>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main style="margin-top:80px">
+        <div class="container">
+            <div align="center" class="row">
+                <h2>THÔNG TIN TÀI KHOẢN KHÁCH HÀNG</h2>
+
+                <table style="width:100%" border="1">
+                    <thead style="background-color:lightgreen">
+                        <tr>
+                            <th>
+                                Tên tài khoản
+                            </th>
+                            <th>
+                                Quyền hạn
+                            </th>
+                            <th>
+                                Ngày khởi tạo
+                            </th>
+                            <th>
+                                Thông tin
+                            </th>
+                            <th>
+                                Trạng thái tài khoản
+                            </th>
+                            <th>
+                                Tùy chọn
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr id="g1">
+                        <th>
+                            vanthanh123
+                        </th>
+                        <th>
+                            khách hàng
+                        </th>
+                        <th>
+                            11/01/2010
+                        </th>
+                        <th>
+                            Nguyễn văn thành<br />địa chỉ:129 Nguyễn trãi Q5 TPHCM
+                        </th>
+                        <th id="t1">
+                            đang hoạt động
+                        </th>
+                        <th id="tt1" style="display:none;height:100%;border-color:red;">
+                                đã khóa
+                        </th>
+                        <th>
+                            <button id="x1" onclick="xoatk1()">khóa</button>
+                            <button id="m1" style="display:none" onclick="mokhoa1()">mở khóa</button>
+                        </th>
+                    </tr>
+                    <tr id="g2">
+                        <th>
+                            
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>   
+                        <th id="t2">
+                            đang hoạt động
+                        </th>
+                        <th id="tt2" style="display:none;border-color:red;">
+                            đã khóa
+                        </th>
+
+                        <th>
+                            <button id="x2" onclick="xoatk2()">khóa</button>
+                            <button id="m2" style="display:none" onclick="mokhoa2()">mở khóa</button>
+                        </th>
+                    </tr>
+                    <tr id="g3">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t3">
+                            đang hoạt động
+                        </th>
+                        <th id="tt3" style="display:none;border-color:red;">
+                            đã khóa
+                        </th>
+                        <th>
+                            <button id="x3" onclick="xoatk3()">khóa</button>
+                            <button id="m3" style="display:none" onclick="mokhoa3()">mở khóa</button>
+                        </th>
+                    </tr>
+                    <tr id="g4">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t4">
+                            đang hoạt động
+                        </th>
+                        <th id="tt4" style="display:none;border-color:red;">
+                            đã khóa
+                        </th>
+                        <th>
+                            <button id="x4" onclick="xoatk4()">khóa</button>
+                            <button id="m4" style="display:none" onclick="mokhoa4()">mở khóa</button>
+                        </th>
+                    </tr>
+                    <tr id="g5">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t5">
+                            đang hoạt động
+                        </th>
+                        <th id="tt5" style="display:none">
+                            đã khóa
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr id="g6">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t6">
+                            đang hoạt động
+                        </th>
+                        <th id="tt6" style="display:none">
+                            đã khóa
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr id="g7">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t7">
+                            đang hoạt động
+                        </th>
+                        <th id="tt7" style="display:none">
+                            đã khóa
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr id="g8">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t8">
+                            đang hoạt động
+                        </th>
+                        <th id="tt8" style="display:none">
+                            đã khóa
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr id="g9">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t9">
+                            đang hoạt động
+                        </th>
+                        <th id="tt9" style="display:none">
+                            đã khóa
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    <tr id="g10">
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th id="t10">
+                            đang hoạt động
+                        </th>
+                        <th id="tt10" style="display:none">
+                            đã khóa
+                        </th>
+                        <th>
+                            <button onclick="xoatk10()">khóa</button>
+                            <button onclick="">mở khóa</button>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script>
+        function Redirect() {
+            var b = document.getElementById("tk").value;
+            if (b == "áo nam" || b == "nam") {
+                window.location = "../../link.html/male.html";
+            }
+            else if (b == "áo nữ" || b == "nữ") {
+                window.location = "../../link.html/female.html";
+            }
+            else if (b == "giày") {
+                window.location = "../../đi kèm/giày.html";
+            }
+            else if (b == "balo" || b == "túi xách") {
+                window.location = "../../đi kèm/balo.html";
+            }
+            else if (b == "áo khoác") {
+                window.location = "../../đi kèm/áo khoác.html";
+            }
+            else if (b == "khách hàng") {
+                window.location = "quanlykhachhang.html";
+            }
+            else if (b == "đơn hàng") {
+                window.location = "quanlydonhang.html";
+            }
+            else {
+                alert("từ khóa tìm kiếm không tồn tại");
+            }
+        }
+        function xoatk1() {
+            document.getElementById("t1").style.display = "none";
+            document.getElementById("tt1").style.display = "block";
+            document.getElementById("g1").style.backgroundColor = "red";
+            document.getElementById("x1").style.display = "none";
+            document.getElementById("m1").style.display = "block";
+        }
+        function xoatk2() {
+            document.getElementById("t2").style.display = "none";
+            document.getElementById("tt2").style.display = "block";
+            document.getElementById("g2").style.backgroundColor = "red";
+            document.getElementById("x2").style.display = "none";
+            document.getElementById("m2").style.display = "block";
+        }
+        function xoatk3() {
+            document.getElementById("t3").style.display = "none";
+            document.getElementById("tt3").style.display = "block";
+            document.getElementById("g3").style.backgroundColor = "red";
+            document.getElementById("x3").style.display = "none";
+            document.getElementById("m3").style.display = "block";
+        }
+        function xoatk4() {
+            document.getElementById("t4").style.display = "none";
+            document.getElementById("tt4").style.display = "block";
+            document.getElementById("g4").style.backgroundColor = "red";
+            document.getElementById("x4").style.display = "none";
+            document.getElementById("m4").style.display = "block";
+        }
+        function xoatk5() {
+            document.getElementById("t5").style.display = "none";
+            document.getElementById("tt5").style.display = "block";
+            document.getElementById("g5").style.backgroundColor = "red";
+            document.getElementById("x5").style.display = "none";
+            document.getElementById("m5").style.display = "block";
+        }
+        function xoatk6() {
+            document.getElementById("t6").style.display = "none";
+            document.getElementById("tt6").style.display = "block";
+            document.getElementById("g6").style.backgroundColor = "red";
+            document.getElementById("x6").style.display = "none";
+            document.getElementById("m6").style.display = "block";
+        }
+        function xoatk7() {
+            document.getElementById("t7").style.display = "none";
+            document.getElementById("tt7").style.display = "block";
+            document.getElementById("g7").style.backgroundColor = "red";
+            document.getElementById("x7").style.display = "none";
+            document.getElementById("m7").style.display = "block";
+        }
+        function xoatk8() {
+            document.getElementById("t8").style.display = "none";
+            document.getElementById("tt8").style.display = "block";
+            document.getElementById("g8").style.backgroundColor = "red";
+            document.getElementById("x8").style.display = "none";
+            document.getElementById("m8").style.display = "block";
+        }
+        function xoatk9() {
+            document.getElementById("t9").style.display = "none";
+            document.getElementById("tt9").style.display = "block";
+            document.getElementById("g9").style.backgroundColor = "red";
+            document.getElementById("x9").style.display = "none";
+            document.getElementById("m9").style.display = "block";
+        }
+        function xoatk10() {
+            document.getElementById("t10").style.display = "none";
+            document.getElementById("tt10").style.display = "block";
+            document.getElementById("g10").style.backgroundColor = "red";
+            document.getElementById("x10").style.display = "none";
+            document.getElementById("m10").style.display = "block";
+        }
+        function mokhoa1() {
+            document.getElementById("t1").style.display = "block";
+            document.getElementById("tt1").style.display = "none";
+            document.getElementById("g1").style.backgroundColor = "white";
+            document.getElementById("x1").style.display = "block";
+            document.getElementById("m1").style.display = "none";
+            document.getElementById("t1").style.borderColor = "white";
+        }
+        function mokhoa2() {
+            document.getElementById("t2").style.display = "block";
+            document.getElementById("tt2").style.display = "none";
+            document.getElementById("g2").style.backgroundColor = "white";
+            document.getElementById("x2").style.display = "block";
+            document.getElementById("m2").style.display = "none";
+            document.getElementById("t2").style.borderColor = "white";
+        }
+        function mokhoa3() {
+            document.getElementById("t3").style.display = "block";
+            document.getElementById("tt3").style.display = "none";
+            document.getElementById("g3").style.backgroundColor = "white";
+            document.getElementById("x3").style.display = "block";
+            document.getElementById("m3").style.display = "none";
+            document.getElementById("t3").style.borderColor = "white";
+        }
+        function mokhoa4() {
+            document.getElementById("t4").style.display = "block";
+            document.getElementById("tt4").style.display = "none";
+            document.getElementById("g4").style.backgroundColor = "white";
+            document.getElementById("x4").style.display = "block";
+            document.getElementById("m4").style.display = "none";
+            document.getElementById("t4").style.borderColor = "white";
+        }
+        function mokhoa5() {
+            document.getElementById("t5").style.display = "block";
+            document.getElementById("tt5").style.display = "none";
+            document.getElementById("g5").style.backgroundColor = "white";
+            document.getElementById("x5").style.display = "block";
+            document.getElementById("m5").style.display = "none";
+            document.getElementById("t5").style.borderColor = "white";
+        }
+        function mokhoa6() {
+            document.getElementById("t6").style.display = "block";
+            document.getElementById("tt6").style.display = "none";
+            document.getElementById("g6").style.backgroundColor = "white";
+            document.getElementById("x6").style.display = "block";
+            document.getElementById("m6").style.display = "none";
+            document.getElementById("t6").style.borderColor = "white";
+        }
+        function mokhoa7() {
+            document.getElementById("t7").style.display = "block";
+            document.getElementById("tt7").style.display = "none";
+            document.getElementById("g7").style.backgroundColor = "white";
+            document.getElementById("x7").style.display = "block";
+            document.getElementById("m7").style.display = "none";
+            document.getElementById("t7").style.borderColor = "white";
+        }
+        function mokhoa8() {
+            document.getElementById("t8").style.display = "block";
+            document.getElementById("tt8").style.display = "none";
+            document.getElementById("g8").style.backgroundColor = "white";
+            document.getElementById("x8").style.display = "block";
+            document.getElementById("m8").style.display = "none";
+            document.getElementById("t8").style.borderColor = "white";
+        }
+        function mokhoa9() {
+            document.getElementById("t9").style.display = "block";
+            document.getElementById("tt9").style.display = "none";
+            document.getElementById("g9").style.backgroundColor = "white";
+            document.getElementById("x9").style.display = "block";
+            document.getElementById("m9").style.display = "none";
+            document.getElementById("t9").style.borderColor = "white";
+        }
+        function mokhoa10() {
+            document.getElementById("t10").style.display = "block";
+            document.getElementById("tt10").style.display = "none";
+            document.getElementById("g10").style.backgroundColor = "white";
+            document.getElementById("x10").style.display = "block";
+            document.getElementById("m10").style.display = "none";
+            document.getElementById("t10").style.borderColor = "white";
+        }
+    </script>
+
+</body>
+</html>

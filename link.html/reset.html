@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>U&S - BIỂU MẪU</title>
+    <link href="../css/index-thien.css" rel="stylesheet" />
+    <link rel="icon" href="../images/icon tab.png" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section style="width:100%;background-color:aliceblue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6  col-md-6 col-ms-6 col-xs-6">
+                        <a href="../index.html"><img title="về trang chủ" style="margin:10px 0px 10px 100px;height:100px;width:100px;" src="../images/homepage.png" /></a>
+                    </div>
+
+                    <div align="right" class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                        <ul class="tt">
+                            <li>
+                                <a href="#">Thông tin</a>
+                            </li>
+                            <li>
+                                <a href="#">Hỏi đáp</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div align="right" class="col-lg-1  col-md-1 col-sm-1 col-xs-1">
+                        <a href="#">
+                            <img title="thông tin tài khoản" style="margin-top:20px; height:60px; width:60px; border-radius:50%;" src="../images/avatar1.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main style="margin-top:200px;">
+        <div class="container">
+            <div class="row">
+                <div align="center" class="col-lg-12 colmd--12 col-sm-12 col-xs-12">
+                    <div>
+                        <form action="trangdangnhap.html" name="f" method="get" onsubmit="return kt();">
+                            <table style="background-color:white;" width="500" border="2" cellpadding="5" align="center">
+                                <tr>
+                                    <th style="text-align:center; padding:2px 3px 2px 3px;background-color:lawngreen;" colspan="2">MẬT KHẨU MỚI</th> <!-- để chữ "ĐĂNG KÝ" nằm ở giữa -->
+                                </tr>
+
+                                <tr>
+                                    <td>Mật khẩu mới</td>
+                                    <td>
+                                        <input style="border-radius:5px;" type="password" name="newpass" size="45" placeholder="Điền mật khẩu">
+                                        <div id="cb"></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Xác nhận mật khẩu</td>
+                                    <td>
+                                        <input style="border-radius:5px;" type="password" name="reenter" size="45" placeholder="Nhập lại">
+                                        <div id="canhbao"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <!-- nbsp là tạo khoảng trắng giữa Nhập lại và Đồng ý-->
+                                        <input type="reset" value="Nhập lại" /> &nbsp;
+                                        <input type="submit" value="Xác nhận" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="margin-top:210px;background-color:lightgray;height:150px;">
+
+    </footer>
+    <script>
+        function kt() {
+            var a = document.f;
+            if (a.newpass.value == "") {
+                a.newpass.focus();
+                document.getElementById("cb").innerHTML = "hãy nhập mật khẩu";
+                document.getElementById("cb").style.color = "red";
+                return false;
+            }
+            if (a.newpass.value != document.reenter.value) {
+                a.reenter.focus();
+                document.getElementById("canhbao").innerHTML = "nhập không trùng mật khẩu";
+                document.getElementById("canhbao").style.color = "red";
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+﻿<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>U&S - BIỂU MẪU</title>
+    <link rel="icon" href="../images/icon tab.png" />
+    <link href="../css/index-thien.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section style="width:100%;background-color:aliceblue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6  col-md-6 col-ms-6 col-xs-6">
+                        <a href="../index.html"><img title="về trang chủ" style="margin:10px 0px 10px 100px;height:100px;width:100px;" src="../images/homepage.png" /></a>
+                    </div>
+
+                    <div align="right" class="col-lg-6  col-md-6 col-ms-6 col-xs-6">
+                        <ul class="tt">
+                            <li>
+                                <a href="#">Thông tin</a>
+                            </li>
+                            <li>
+                                <a href="#">Hỏi đáp</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main style="width:100%;" class="than">
+
+    </main>
+    <footer style="z-index:1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+                </div>
+                <div align="center" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <form align="center" style="margin-top:130px;width:100%;" action="trangdangnhap.html" method="get" name="frmdangky" onreset="reset();" onsubmit="return kiemtra();">
+                        <!-- action là để đi đến 1 trang web khác(đưa đường dẫn nó), method là phương thức-->
+                        <p style="text-align:center;color:red;">mục chứa dấu * không được để trống</p>
+                        <table align="center" style="background-color:white;border-radius:10px;" width="100%" border="1" cellpadding="5">
+                            <tr>
+                                <th style="text-align:center; padding:2px 3px 2px 3px;" colspan="2">ĐĂNG KÝ</th> <!-- để chữ "ĐĂNG KÝ" nằm ở giữa -->
+                            </tr>
+
+                            <tr>
+                                <td>Họ và tên *</td>
+                                <td>
+                                    <input type="text" id="hoten" name="txthoten" size="50" placeholder="Điền họ và tên">
+                                    <div id="name"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email *</td>
+                                <td>
+                                    <input type="text" id="mail" name="email" size="50" placeholder="abc123@gmail.com" />
+                                    <div id="e"></div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Tài khoản *</td>
+                                <td>
+                                    <input type="text" id="tk" name="tk" size="50" placeholder="Điền tài khoản">
+                                    <div id="canhbaotk"></div>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>Mật khẩu *</td>
+                                <td>
+                                    <input type="password" id="mk" name="txtpass" minlength="6" maxlength="16" size="50" placeholder="Điền mật khẩu">
+                                    <div id="canhbaomk"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Nhập lại mật khẩu *&nbsp;&nbsp;&nbsp;</td>
+                                <td>
+                                    <input type="password" id="re" name="repeat" min="10" size="50" placeholder="Điền lại mật khẩu">
+                                    <div id="canhbao"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Giới tính *</td>
+                                <td>
+                                    <label>
+                                        <!-- label là nhãn, nhấp vào chữ nam cũng được, nhấp vào chữ nữ cũng được -->
+                                        <input type="radio" name="gioitinh" id="nam"> Nam
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="gioitinh" id="nu"> Nữ
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ngày sinh</td>
+                                <td>
+                                    <select name="Ngày" id="ngay">
+                                        <script>
+                                            for (i = 1; i <= 31; i++)
+                                                document.write('<option value="' + i + '"+>' + i + '</option>');
+                                        </script>
+
+                                    </select>
+                                    <select name="Tháng" id="thang">
+                                        <script>
+                                            for (i = 1; i <= 12; i++)
+                                                document.write('<option value="' + i + '"+>' + i + '</option>');
+                                        </script>
+
+                                    </select>
+                                    <select name="Năm">
+                                        <script>
+                                            for (i = 1950; i <= 2020; i++)
+                                                document.write('<option value="' + i + '"+>' + i + '</option>');
+                                        </script>
+
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Địa chỉ*</td>
+                                <td>
+                                    <!-- col 30 nó sẽ cao 30 dòng-->
+                                    <textarea name="area" cols="52" rows="4" placeholder="Điền địa chỉ"></textarea>
+                                    <div id="place"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ảnh đại diện</td>
+                                <td>
+                                    <enstyactive></enstyactive>
+                                    <input type="file" name="avatar">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Sở thích</td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="music"> Nghe nhạc
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="movie"> Xem phim
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="traveling"> Đi du lịch
+                                    </label>
+                                    <textarea cols="52" rows="4" placeholder="Khác..."></textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <!-- nbsp là tạo khoảng trắng giữa Nhập lại và Đồng ý-->
+                                    <input type="reset" onclick="return reset();" value="Nhập lại" /> &nbsp;
+                                    <input type="submit" value="Đăng ký"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="checkbox" name="điều khoản" value="Điều khoản" /><i style="color:deepskyblue">Tôi đồng ý với điều khoản và dịch vụ</i>
+                    </form>
+
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function kiemtra() {
+            //alert ("trong function");
+            //document.frmdangky.txtmasv.value;
+            var obj = document.frmdangky;
+            if (obj.txthoten.value == "") {
+                obj.txthoten.focus();
+                document.getElementById("name").innerHTML = "họ tên không được bỏ trống!";
+                document.getElementById("name").style.color = "red";
+                return false;
+            }
+            if (obj.email.value == "") {
+                obj.email.focus();
+                document.getElementById("e").innerHTML = "hãy nhập email!";
+                document.getElementById("e").style.color = "red";
+                document.getElementById("name").innerHTML = "";
+                return false;
+            }
+            if (obj.tk.value == "") {
+                obj.tk.focus();
+                document.getElementById("canhbaotk").innerHTML = "hãy nhập tên tài khoản!";
+                document.getElementById("canhbaotk").style.color = "red";
+                document.getElementById("e").innerHTML = "";
+                return false;
+            }
+            if (obj.txtpass.value == "") {
+                obj.txtpass.focus();
+                document.getElementById("canhbaomk").innerHTML = "mật khẩu không được bỏ trống!";
+                document.getElementById("canhbaomk").style.color = "red";
+                document.getElementById("canhbaotk").innerHTML = "";
+                return false;
+            }
+            if (obj.repeat.value == "") {
+                obj.repeat.focus();
+                document.getElementById("canhbao").innerHTML = "hãy nhập lại mật khẩu";
+                document.getElementById("canhbao").style.color = "red";
+                document.getElementById("canhbaomk").innerHTML = "";
+                return false;
+            }
+            if (obj.txtpass.value != obj.repeat.value) {
+                obj.repeat.focus();
+                document.getElementById("canhbao").innerHTML = "nhập lại không trùng mật khẩu!";
+                document.getElementById("canhbao").style.color = "red";
+                document.getElementById("canhbaomk").innerHTML = "";
+                return false;
+            }
+            if (obj.area.value == "") {
+                obj.repeat.focus();
+                document.getElementById("place").innerHTML = "vui lòng điền địa chỉ!";
+                document.getElementById("place").style.color = "red";
+                document.getElementById("canhbao").innerHTML = "";
+                return false;
+            }
+            alert('đăng ký thành công,xin vui lòng chờ')
+            return true;
+        }
+        function reset() {
+            document.getElementById("name").innerHTML = "";
+            document.getElementById("canhbaotk").innerHTML = "";
+            document.getElementById("e").innerHTML = "";
+            document.getElementById("canhbaomk").innerHTML = "";
+            document.getElementById("canhbao").innerHTML = "";
+            document.getElementById("place").innerHTML = "";
+            
+        }
+    </script>
+   
+</body>
+
+</html>

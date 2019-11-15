@@ -1,0 +1,741 @@
+﻿
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.ho {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+/*------------------*/
+.one {
+    background-color: antiquewhite;
+}
+
+.danhmuc {
+    background-color: orangered;
+    height: 38px;
+}
+
+header a {
+    color: black;
+    font-size: 17px;
+}
+
+
+.menu ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 100%;
+    color: red;
+}
+
+    .menu ul li {
+        display: inline-block;
+        margin: 5px 0px 0px 0px;
+    }
+
+
+
+.lup {
+    height: 5%;
+    width: 10%;
+    border-radius: 5%;
+}
+
+.acc li {
+    list-style: none;
+}
+/*đoạn code làm cho thanh tìm kiếm biến dài ra*/
+.timkiem {
+    width: 30%;
+    margin-top: 3%;
+    height: 33px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 2px;
+    outline: none;
+    padding: 12px 14px;
+    transition: 0.6s ease-in-out;
+}
+
+    .timkiem:focus {
+        width: 70%;
+        background-color: lightblue;
+    }
+
+.search {
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding: 14px 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.search-bar {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 45px;
+}
+
+.search-bar {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 45px;
+}
+
+.search:hover {
+    color: black;
+}
+
+
+/*------------mục tạo menu hover dropdown------------*/
+
+.menu1 ul {
+    height: auto;
+    text-align: center;
+    background-color: orangered;
+    position: absolute;
+    width: 65%;
+}
+
+    .menu1 ul li {
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        list-style: none;
+        width: 20%;
+    }
+
+.menu1 li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5.38% 10%;
+    text-align: left;
+}
+
+.menu1 ul li {
+    float: left;
+    text-align: center;
+}
+
+.menu1 li ul {
+    display: none;
+    width: 20%;
+}
+
+    .menu1 li ul a:hover {
+        color: red;
+        padding-left: 2%;
+    }
+
+.menu1 li:hover ul {
+    display: block;
+    background-color: saddlebrown;
+}
+
+.menu1 ul li ul li {
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul li ul li a:hover {
+    margin-left: 2%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu1 li:hover > a {
+    background-color: orange;
+}
+
+
+.hotline {
+    float: left;
+    margin-top: 10%;
+    width: 100%;
+}
+
+    .hotline img {
+        margin-top: 0px;
+        height: 22%;
+        width: 22%;
+        margin-left: 0.1%;
+    }
+
+.hotline {
+    list-style: none;
+    color: white;
+    margin: 1% 1%;
+    margin-top: 2%;
+}
+
+.cart-r {
+    animation: cart 0.5s infinite;
+    -webkit-animation: cart 0.5s infinite;
+    -moz-animation: cart 0.5s infinite;
+    -o-animation: cart 0.5s infinite;
+}
+@-webkit-keyframes cart {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(-5deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(5deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        -webkit-transform: rotate(-5deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(5deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+
+/*--------mục ảnh nền chủ đạo-----------*/
+
+/*-------------mục tin tức-----------------------*/
+.new {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .new img {
+        height: 290px;
+        width: 200px;
+    }
+
+    .new ul {
+        list-style: none;
+    }
+
+        .new ul li {
+            text-align: center;
+            padding: 20px 65px 20px 65px;
+            display: inline-block;
+        }
+
+    .new img:hover {
+        opacity: 0.7;
+        height: 296px;
+        width: 204px;
+        transition: 0.25s ease-in-out;
+    }
+
+    .new ul li a {
+        color: black;
+    }
+
+        .new ul li a:hover {
+            color: green;
+        }
+
+/*---------mục tin tức và giảm giá-------*/
+.sale ul {
+    text-align: center;
+    list-style: none;
+}
+
+    .sale ul li {
+        display: inline-block;
+        padding: 10px 40px;
+    }
+
+        .sale ul li b {
+            color: black;
+        }
+
+.sale ul li b:hover {
+    color: green;
+}
+
+.sale img {
+    height: 100%;
+    width: 100%;
+    padding: 5% 5%;
+    border-radius: 10%;
+    cursor:pointer;
+}
+.add {
+    color: darkgreen;
+    margin-top: 80%;
+    z-index: 2;
+    bottom: 1%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    margin-left: 4.5%;
+    background-color:darkkhaki;
+    opacity:0.6;
+    border-radius:20px;
+    width:83.5%;
+}
+.sale img:hover {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+.cha {
+    height: 350px;
+    width: 390px;
+    padding: 0 0 0 0;
+}
+.cha:hover .add {
+        display: block;
+        opacity:1;
+        transition:1s ease-in-out;
+}
+
+.l li {
+    background-color: gray;
+    border: 2px solid black;
+    cursor: pointer;
+   
+}
+.l li:hover{
+    background-color:yellow;
+   
+}
+.l li:hover b{
+    color:red;
+}
+.l li b{
+    color:white;
+}
+
+.sale a:hover {
+        color: green;
+}
+/*---------mục phản hổi------------*/
+.contact {
+    background-color: lightgray;
+    height: 270px;
+}
+
+    .contact ul {
+        list-style: none;
+    }
+
+        .contact ul li {
+            padding: 20px 30px;
+        }
+/*-----------mục đánh giá của khash hàng và phản hồi------------*/
+
+.vote {
+    background-image: url('../images/nentoi.jpg');
+    height: 450px;
+}
+
+.sao {
+    opacity: 0.6;
+    border-radius: 15px;
+    height: 24px;
+    width: 100px;
+}
+
+    .sao:hover {
+        opacity: 1.5;
+        transition: 0.34s ease-in-out;
+        height: 26px;
+        width: 105px;
+    }
+
+.ke {
+    border-right: 2px solid white;
+}
+
+.ten {
+    height: 35px;
+    width: 555px;
+}
+
+.comment {
+    position: relative;
+    width: 555px;
+}
+
+/*.comment:hover {
+    height:180px;
+    width:450px;
+    display:block;
+    transition:1s ease-out;
+}*/
+
+/*------đoạn footer-section cuối cùng--------*/
+.copyright {
+    background-color: dimgray;
+    height: 90px;
+}
+
+    .copyright b {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+#open1, #open2, #open3, #open4, #open5, #open6, #open7, #open8, #open9, #open10 {
+    margin-top: 10%;
+    margin-left: 20%;
+    display: none;
+    background-color: khaki;
+    position: fixed;
+    width: 55%;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+/*-----------------------------------------------*/
+
+
+/*------------------------------------------------*/
+/* phần code của trang male.html*/
+.aonam {
+    margin-top: 160px;
+}
+
+    .aonam a img {
+        height: 315px;
+        width: 210px;
+        padding: 10px 20px 10px 20px;
+        margin: 0px 0px 0px 0px;
+    }
+
+        .aonam a img:hover {
+            height: 320px;
+            width: 213px;
+            opacity: 0.65;
+        }
+
+    .aonam a {
+        color: black;
+    }
+
+        .aonam a:hover {
+            color: green;
+        }
+
+.somi a img {
+    height: 300px;
+    width: 227px;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+    .somi a img:hover {
+        height: 305px;
+        width: 230px;
+        opacity: 0.65;
+    }
+
+.cou li {
+    display: inline-block;
+    list-style: none;
+}
+
+.day a {
+    color: white;
+    border: 2px solid white;
+}
+
+    .day a:hover {
+        color: yellow;
+        border: 2px solid yellow;
+    }
+/*---------trang male.html---------*/
+
+/*----------trang quên mật khẩu--------*/
+.mau {
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+.tt {
+    margin-top: 50px;
+    list-style: none;
+}
+
+    .tt li {
+        display: inline-block;
+        padding: 0px 40px 10px 0px;
+    }
+
+        .tt li a {
+            color: mediumblue;
+        }
+
+            .tt li a:hover {
+                color: yellowgreen;
+            }
+/*-------quên mật khẩu------------*/
+
+/*------------trang đagnư nhập- đăng ký-------------*/
+.than {
+    background-image: url('../images/Lobelia deckenii 1920x1080.jpg');
+    filter: brightness(100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    background-size: cover;
+}
+
+.cart img {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+}
+
+/*-------icon-tell------*/
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+.hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.hotline-phone-ring-circle {
+    width: 85px;
+    height: 85px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #e60808;
+    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+}
+
+.hotline-phone-ring-circle-fill {
+    width: 55px;
+    height: 55px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background-color: rgba(230, 8, 8, 0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.hotline-phone-ring-img-circle {
+    background-color: #e60808;
+    width: 33px;
+    height: 33px;
+    top: 37px;
+    left: 37px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .hotline-phone-ring-img-circle .pps-btn-img {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+        .hotline-phone-ring-img-circle .pps-btn-img img {
+            width: 20px;
+            height: 20px;
+        }
+
+.hotline-bar {
+    display: none;
+    position: absolute;
+    background: rgba(230, 8, 8, 0.75);
+    height: 40px;
+    width: 170px;
+    line-height: 40px;
+    border-radius: 3px;
+    padding: 0 3%;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    z-index: 9;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px !important;
+    /* width: 175px !important; */
+    left: 33px;
+    bottom: 37px;
+    
+}
+.hotline-phone-ring-wrap:hover .hotline-bar{
+    display:block;
+    animation: xo 0.1s;
+}
+@keyframes xo{
+    0%{
+        width:20%;
+    }
+    20% {
+        width: 36%;
+    }
+    40% {
+        width: 52%;
+    }
+    60%{
+        width:68%;
+    }
+    80% {
+        width: 84%;
+    }
+    100%{
+        width:100%;
+    }
+}
+.hotline-bar > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 50px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: Arial;
+}
+
+        .hotline-bar > a:hover,
+        .hotline-bar > a:active {
+            color: #fff;
+        }
+
+@-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        -webkit-opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .hotline-bar {
+        display: none;
+    }
+}

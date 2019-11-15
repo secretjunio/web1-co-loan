@@ -1,0 +1,1198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SHOP THỜI TRANG U&S - UY TÍN & CHẤT LƯỢNG & SÁNG TẠO</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/index-thien.css" rel="stylesheet" />
+    <link href="css/Hover/css/hover.css" rel="stylesheet" />
+    <link rel="icon" href="images/icon tab.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="js/JavaScript1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+
+        .mySlides {
+            display: none;
+        }
+    </style>
+    <script>
+        function thongbao() {
+            document.getElementById("al").style.display = "block";
+            setTimeout(hide, 1000);
+
+        }
+        function hide() {
+            document.getElementById("al").style.display = "none";
+        }
+    </script>
+
+    <script type="text/javascript">
+        function Redirect() {
+            var b = document.getElementById("tk").value;
+            if (b == "") {
+                alert("vui lòng nhập từ khóa tìm kiếm");
+            }
+            else if (b == "áo nam" || b == "nam") {
+                window.location = "../link-logout/male-logout.html";
+            }
+            else if (b == "áo nữ" || b == "nữ") {
+                window.location = "../link-logout/female-logout.html";
+            }
+            else if (b == "giày") {
+                window.location = "../đi kèm/giày.html";
+            }
+            else if (b == "balo" || b == "túi xách") {
+                window.location = "../đi kèm/balo.html";
+            }
+            else if (b == "áo khoác") {
+                window.location = "../đi kèm/áo khoác.html";
+            }
+            else {
+                alert("từ khóa tìm kiếm không tồn tại");
+            }
+        }
+        function hot() {
+            document.getElementById("hot").style.display = "block";
+            document.getElementById("km").style.display = "none";
+            document.getElementById("tintuc").style.display = "none";
+            document.getElementById("h").style.color = "yellow";
+            document.getElementById("k").style.color = "black";
+            document.getElementById("t").style.color = "black";
+        }
+        function khuyenmai() {
+            document.getElementById("hot").style.display = "none";
+            document.getElementById("km").style.display = "block";
+            document.getElementById("tintuc").style.display = "none";
+            document.getElementById("k").style.color = "yellow";
+            document.getElementById("h").style.color = "black";
+            document.getElementById("t").style.color = "black";
+        }
+        function tintuc() {
+            document.getElementById("hot").style.display = "none";
+            document.getElementById("km").style.display = "none";
+            document.getElementById("tintuc").style.display = "block";
+            document.getElementById("t").style.color = "yellow";
+            document.getElementById("h").style.color = "black";
+            document.getElementById("k").style.color = "black";
+        }
+        function first() {
+            document.getElementById("first").style.backgroundColor = "lawngreen";
+            document.getElementById("seconds").style.backgroundColor = "gray";
+            document.getElementById("third").style.backgroundColor = "gray";
+            document.getElementById("fourth").style.backgroundColor = "gray";
+            document.getElementById("part1").style.display = "block";
+            document.getElementById("part2").style.display = "none";
+            document.getElementById("part3").style.display = "none";
+            document.getElementById("part4").style.display = "none";
+        }
+        function seconds() {
+            document.getElementById("first").style.backgroundColor = "gray";
+            document.getElementById("seconds").style.backgroundColor = "lawngreen";
+            document.getElementById("third").style.backgroundColor = "gray";
+            document.getElementById("fourth").style.backgroundColor = "gray";
+
+            document.getElementById("part1").style.display = "none";
+            document.getElementById("part2").style.display = "block";
+            document.getElementById("part3").style.display = "none";
+            document.getElementById("part4").style.display = "none";
+        }
+        function third() {
+            document.getElementById("first").style.backgroundColor = "gray";
+            document.getElementById("seconds").style.backgroundColor = "gray";
+            document.getElementById("third").style.backgroundColor = "lawngreen";
+            document.getElementById("fourth").style.backgroundColor = "gray";
+            document.getElementById("part1").style.display = "none";
+            document.getElementById("part2").style.display = "none";
+            document.getElementById("part3").style.display = "block";
+            document.getElementById("part4").style.display = "none";
+        }
+        function fourth() {
+            document.getElementById("first").style.backgroundColor = "gray";
+            document.getElementById("seconds").style.backgroundColor = "gray";
+            document.getElementById("third").style.backgroundColor = "gray";
+            document.getElementById("fourth").style.backgroundColor = "lawngreen";
+            document.getElementById("part1").style.display = "none";
+            document.getElementById("part2").style.display = "none";
+            document.getElementById("part3").style.display = "none";
+            document.getElementById("part4").style.display = "block";
+
+
+        }
+    </script>
+</head>
+<body>
+    <header class="headroom">
+        <section class="one">
+            <div class="row">
+                <div align="left" class="col-lg-6 col-xs-6 col-md-6">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="index.html"><img title="Trang chủ" style="margin:0px 0px 10px 20px;" class="ho" src="images/homepage.png" /></a>
+                            </li>
+                            <li>
+                                <a style="font-family: 'Kaushan Script', cursive; padding:0px 0px 0px 0px; color:red;text-decoration:none;" href="index.html"><h1>UNIQUE & STRANGER</h1></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div align="right" class="col-lg-4 col-xs-4 col-md-4">
+                    <form style="float:right" name="frmtimkiem" class="search" onsubmit="Redirect(); return false;">
+                        <input id="tk" class="timkiem" name="timkiem" type="text" placeholder="Tìm kiếm..." />
+                        <a onclick="Redirect(); return false;" href="#"><img class="lup" src="images/images.png" /></a>
+                    </form>
+                </div>
+                <div align="center" class="col-lg-2 col-xs-2 col-md-2">
+
+                    <a style="text-decoration:none;" href="link.html/trangdangnhap.html">
+                        <img style="margin-top:5px; height:60px; width:60px; border-radius:50%;" src="images/avatar-login.png" /><br /> Đăng nhập
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="danhmuc">
+            <div style="width:100%" class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-ms-9 col-md-9 col-xs-9">
+                        <div class="menu1">
+                            <ul>
+                                <li>
+                                    <a href="#">Danh sách</a>
+                                    <ul>
+                                        <li>
+                                            <a href="male.html">Nam</a>
+                                        </li>
+                                        <li>
+                                            <a href="female.html">Nữ</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li style="width:25%;height:10%;"><a style="padding:4.1% 7%;" href="#">Đặt mua ngay</a></li>
+                                <li>
+                                    <a href="#">Đi kèm</a>
+                                    <ul>
+                                        <li>
+                                            <a href="../đi kèm/áo khoác.html">Áo khoác</a>
+                                        </li>
+                                        <li>
+                                            <a href="../đi kèm/nón.html">Nón</a>
+                                        </li>
+                                        <li>
+                                            <a href="../đi kèm/balo.html">Túi xách</a>
+                                        </li>
+                                        <li>
+                                            <a href="../đi kèm/giày.html">Giày</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+
+                                    <a href="link.html/gioithieu.html">Giới thiệu</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main style="margin-top:125px;">
+        <section class="nen" style="width:100%;height:70%">
+            <img class="mySlides" src="images/ss1.png" style="width:100%" />
+            <img class="mySlides" src="images/ss2.png" style="width:100%" />
+            <img class="mySlides" src="images/ss3.png" style="width:100%" />
+            <img class="mySlides" src="images/ss4.png" style="width:100%" />
+            <img class="mySlides" src="images/ss5.png" style="width:100%" />
+            <img class="mySlides" src="images/ss6.png" style="width:100%" />
+        </section>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 5000); // Change image every 2 seconds
+            }
+        </script>
+
+        <section align="center" class="new">
+            <div align="center" class="container-fluid">
+                <h2 style="text-align:center">MỘT SỐ MẪU THIẾT KẾ MỚI</h2>
+
+                <div class="row">
+                    <div class="col-lg-1 col-md-1 col-ms-1 col-xs-1">
+
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+                            <img onclick="tele1()" style="padding:20px 10px;" src="images/áo nam/ao-sweater-phoi-tay-totoshop (2).jpg" />
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele1();">xem chi tiết</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+                            <img onclick="tele2()" style="padding:20px 10px;" src="images/áo nam/at1 (2).jpg" />
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele2();">xem chi tiết</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+                            <img onclick="tele3()" style="padding:20px 10px;" src="images/áo nam/at10 (2).jpg" />
+
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele3();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+
+                            <img onclick="tele4()" style="padding:20px 10px;" src="images/áo nam/AT13 (2).jpg" />
+
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele4();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+                            <img onclick="tele5();" style="padding:20px 10px;" src="images/áo nam/at6 (2).jpg" />
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele5();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-ms-1 col-xs-1">
+
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-ms-12 col-xs-12">
+
+                    </div>
+
+                    <div class="col-lg-1 col-md-1 col-ms-1 col-xs-1">
+
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+
+                            <img onclick="tele6();" style="padding:20px 10px;" src="images/áo nữ/ao-hoodie-croptop-tay-dai-totoshop (2).jpg" />
+
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele6();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+
+                            <img onclick="tele7();" style="padding:20px 10px;" src="images/áo nữ/ao-somi-croptop-co-vest- totoshop (2).jpg" />
+
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele7();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+
+                            <img onclick="tele8()" title="ao-somi-nu-co-vest-tay-ngan" style="padding:20px 10px;" src="images/áo nữ/ao-somi-nu-co-vest-tay-ngan-totoshop (2).jpg" />
+
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele8();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+
+                            <img onclick="tele9();" title="ao-thun-nu-form-rong" style="padding:20px 10px;" src="images/áo nữ/ao-thun-nu-form-rong-totoshop 10 (2).jpg" />
+
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele9();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                        <div style="height:296px;">
+
+                            <img onclick="tele10();" title="ao-somi-croptop-co-vest" style="padding:20px 10px;" src="images/áo nữ/ao-somi-croptop-co-vest- totoshop (2).jpg" />
+
+                        </div>
+                        <div align="center">
+                            <b style="color:red">100 000 vnđ</b><br />
+                            <button onclick="tele10();">xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div id="an" style="display:none">
+                        <div class="col-lg-1 col-md-1 col-ms-1 col-xs-1">
+
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                            <div style="height:296px;">
+
+                                <img onclick="tele6();" style="padding:20px 10px;" src="images/áo nữ/ao-hoodie-croptop-tay-dai-totoshop (2).jpg" />
+
+                            </div>
+                            <div align="center">
+                                <b style="color:red">100 000 vnđ</b><br />
+                                <button onclick="tele6();">xem chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                            <div style="height:296px;">
+
+                                <img onclick="tele7();" style="padding:20px 10px;" src="images/áo nữ/ao-somi-croptop-co-vest- totoshop (2).jpg" />
+
+                            </div>
+                            <div align="center">
+                                <b style="color:red">100 000 vnđ</b><br />
+                                <button onclick="tele7();">xem chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                            <div style="height:296px;">
+
+                                <img onclick="tele8()" title="ao-somi-nu-co-vest-tay-ngan" style="padding:20px 10px;" src="images/áo nữ/ao-somi-nu-co-vest-tay-ngan-totoshop (2).jpg" />
+
+                            </div>
+                            <div align="center">
+                                <b style="color:red">100 000 vnđ</b><br />
+                                <button onclick="tele8();">xem chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                            <div style="height:296px;">
+
+                                <img onclick="tele9();" title="ao-thun-nu-form-rong" style="padding:20px 10px;" src="images/áo nữ/ao-thun-nu-form-rong-totoshop 10 (2).jpg" />
+
+                            </div>
+                            <div align="center">
+                                <b style="color:red">100 000 vnđ</b><br />
+                                <button onclick="tele9();">xem chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-ms-2 col-xs-2">
+                            <div style="height:296px;">
+
+                                <img onclick="tele10();" title="ao-somi-croptop-co-vest" style="padding:20px 10px;" src="images/áo nữ/ao-somi-croptop-co-vest- totoshop (2).jpg" />
+
+                            </div>
+                            <div align="center">
+                                <b style="color:red">100 000 vnđ</b><br />
+                                <button onclick="tele10();">xem chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+
+                        </div>
+                    </div>
+                    <div style="height:50px; margin-top:10px;" class="col-lg-12">
+                            <button style="background-color:gray;color:white;border:0.5px solid black" class="hvr-wobble-vertical">Xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr style="border:solid gray 0.5px;" /><!-- kẻ sọc -->
+
+        <section class="sale">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li>
+                            <b id="h" style="cursor:pointer;color:yellow" onclick="hot()">Hot nhất ngày</b>
+                        </li>
+                        <li>
+                            <b id="k" style="cursor:pointer" onclick="khuyenmai();">Khuyến mãi</b>
+                        </li>
+                        <li>
+                            <b id="t" style="cursor:pointer" onclick="tintuc();">Tin tức & sự kiện</b>
+                        </li>
+                    </ul>
+
+                    <div id="hot">
+                        <div id="part1">
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/bcea1392387f3e0fcacca490312e414c.jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo sơ mi tây</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button class="hvr-outline-out" onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/images (1).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo vét công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/áo nữ/1956051_L.jpg" />
+                                <div class="add" align="center">
+                                    <h1>trang phục công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/áo nữ/sfc1485251453.jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo váy + cà vạt</h1>
+                                    <b style="color:red">160 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/áo nữ/download.jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo công sở nữ</h1>
+                                    <b style="color:red">210 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/áo nữ/5a965e3475202_vay-cong-so-dam-thoi-trang-nu-ptda06-dep-me-li.jpg" />
+                                <div class="add" align="center">
+                                    <h1>váy đầm</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="part2" style="display:none">
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/images (2).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo sơ mi tây</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/images (3).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo vét công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/images (4).jpg" />
+                                <div class="add" align="center">
+                                    <h1>trang phục công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/giày/download (7).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo váy + cà vạt</h1>
+                                    <b style="color:red">160 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/images (10).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo công sở nữ</h1>
+                                    <b style="color:red">210 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+
+                                <img src="images/giày/download (6).jpg" />
+                                <div class="add" align="center">
+                                    <h1>váy đầm</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="part3" style="display:none">
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/images (2).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo sơ mi tây</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/balo/balo-nam-dep-kaka-2238-690x690-400x400.jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo vét công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/balo/images (3).jpg" />
+                                <img src="images/áo nữ/1956051_L.jpg" />
+                                <div class="add" align="center">
+                                    <h1>trang phục công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/giày/download (12).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo váy + cà vạt</h1>
+                                    <b style="color:red">160 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/giày/images (21).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo công sở nữ</h1>
+                                    <b style="color:red">210 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/download.jpg" />
+                                <div class="add" align="center">
+                                    <h1>váy đầm</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="part4" style="display:none">
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/images (3).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo sơ mi tây</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/balo/images (8).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo vét công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/giày/download (10).jpg" />
+                                <div class="add" align="center">
+                                    <h1>trang phục công sở</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/download (2).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo váy + cà vạt</h1>
+                                    <b style="color:red">160 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/nón/images (7).jpg" />
+                                <div class="add" align="center">
+                                    <h1>áo công sở nữ</h1>
+                                    <b style="color:red">210 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                                <img src="images/balo/images (2).jpg" />
+                                <div class="add" align="center">
+                                    <h1>váy đầm</h1>
+                                    <b style="color:red">260 000 vnđ</b><br />
+                                    <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="km" style="display:none;">
+                        <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                            <img src="images/bcea1392387f3e0fcacca490312e414c.jpg" />
+                            <div class="add" align="center">
+                                <h1>áo sơ mi tây</h1>
+                                <b style="color:red">260 000 vnđ</b><br />
+                                <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                            <img src="images/images (1).jpg" />
+                            <div class="add" align="center">
+                                <h1>áo vét công sở</h1>
+                                <b style="color:red">260 000 vnđ</b><br />
+                                <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                            </div>
+
+                        </div>
+                        <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                            <img src="images/áo nữ/1956051_L.jpg" />
+                            <div class="add" align="center">
+                                <h1>trang phục công sở</h1>
+                                <b style="color:red">260 000 vnđ</b><br />
+                                <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+
+                        <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                            <img src="images/áo nữ/sfc1485251453.jpg" />
+                            <div class="add" align="center">
+                                <h1>áo váy + cà vạt</h1>
+                                <b style="color:red">160 000 vnđ</b><br />
+                                <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                            </div>
+
+                        </div>
+                        <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                            <img src="images/áo nữ/download.jpg" />
+                            <div class="add" align="center">
+                                <h1>áo công sở nữ</h1>
+                                <b style="color:red">210 000 vnđ</b><br />
+                                <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                        <div align="center" class="col-lg-4 col-md-4 colsm-4 col-xs-4 cha">
+                            <img src="images/áo nữ/5a965e3475202_vay-cong-so-dam-thoi-trang-nu-ptda06-dep-me-li.jpg" />
+                            <div class="add" align="center">
+                                <h1>váy đầm</h1>
+                                <b style="color:red">260 000 vnđ</b><br />
+                                <button onclick="thongbao()">thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tintuc" style="display:none;">
+
+                    </div>
+                    <hr style="border:hidden" />
+
+                    <div class="col-lg-12">
+                        <ul class="l">
+                            <li id="first" onclick="first()" style="padding:1px 8px;background-color:lawngreen ">
+                                    <b>1</b>
+                            </li>
+                            <li id="seconds" style="padding:1px 8px" onclick="seconds()" >
+                                    <b>2</b>
+                            </li>
+                            <li id="third" style="padding:1px 8px" onclick="third()">
+                                    <b>3</b>
+                            </li>
+                            <li id="fourth" style="padding:1px 8px" onclick="fourth()">
+                                    <b>4</b>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="vote">
+            <div class="container">
+                <div class="row">
+
+                    <div align="center" class="col-lg-6">
+                        <div class="ke">
+                            <h3 style="color:white; font-weight:bold;">ĐÔI NÉT VỀ CỬA HÀNG</h3>
+                            <br />
+                            <br />
+                            <b style="color:white;">
+                                U&S là hệ thống cửa hàng online mua bán thời trang uy tín trên toàn quốc.
+                                có mặt trên hầu hết các tỉnh thành lớn trong cả nước,
+                                với phương châm chữ tín làm đầu, chúng tôi đã - đang và sẽ cung cấp cho quý khách những dịch vụ và sản phẩm tốt nhất.<br />
+                                Tại đây bạn có thể tìm thấy tất cả các mẫu thời trang, mới nhất và cổ điển nhất với chất lượng tốt nhất
+                            </b>
+                            <br />
+                            <br /><br /><br />
+                            <br /><br /><br />
+                            <br /><br /><br />
+
+                        </div>
+                    </div>
+                    <div align="center" class="col-lg-6">
+
+                        <h3 style="color:white; font-weight:bold;">PHẢN HỒI</h3>
+                        <br />
+                        <br />
+                        <form action="index.html" method="get" onsubmit="return kiemtra();">
+                            <input class="ten" type="text" name="Tên" placeholder=" Nhập tên của bạn..">
+                            <br />
+                            <br />
+                            <textarea class="comment" cols="50" rows="8" placeholder=" Nhận xét của bạn"></textarea>
+                            <br />
+
+                            <br />
+                        </form>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+                        <div align="center" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div id="warnning" style="display:none">
+                                bạn phải đăng nhập để gửi bình luận<br />
+                                <form method='get' action='link.html/trangdangnhap.html'>
+                                    <button id="login" type="submit">Đăng nhập</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div align="right" class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <input style="background-color:lawngreen" type="button" onclick="kiemtra();" value="GỬI" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+
+        function kiemtra() {
+            document.getElementById("warnning").style.display = "block";
+            document.getElementById("warnning").style.color = "red";
+          
+
+            return false;
+        }
+    </script>
+    <div align="right"></div>
+
+        <section class="contact">
+            <h3 style="text-align:center;margin:0 0 0 0; padding:20px 0px 10px 0px;">KẾT NỐI VỚI CHÚNG TÔI</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <li>
+                                <a style="text-decoration:none;" href="https://mail.google.com" target="_blank">
+                                    <img style="height:40px; width:40px; border-radius:50%;" src="images/mail.png" />fashion79@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img style="height:40px; width:40px; border-radius:50%;" src="images/chăm sóc khách hàng.png" />Chăm sóc khách hàng
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/vanthien.vu.58118" target="_blank">
+                                    <img style="height:40px; width:40px; border-radius:50%;" src="images/facebook.png" />https://facebook.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twiter.com" target="_blank">
+                                    <img style="height:40px; width:40px; border-radius:50%;" src="images/twitter.png" />https://twitter.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div align="center" class="col-lg-12">
+                        <a href="../link.html/polivacy.html" target="_blank">
+                            <b style="color:black; font-weight:bold;">Điều khoản và dịch vụ</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <br />
+                        <br />
+                        <b align="left" style="color:white;">Copyright@ By U&S</b>
+                    </div>
+                    <div align="center" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <b style="color:white;">Thành viên thực hiện<br />Vũ Văn Thiên<br />Nguyễn Vũ Phi Trường<br />Trần Quốc Bảo</b>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <div class="cart" align="right">
+                            <a href="./link.html/cart.html"><img class="cart-r" title="Xem giỏ hàng" style="height:15%;width:8%;" src="images/shopping_cart.png" /></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+   
+    <div class="open" align="center" id="open1">
+        <div align="right" style="top:0">
+            <i onclick="close1()" style="font-size: 30px; cursor: pointer;" class="fa fa-window-close"></i>
+            <!-- cursor: pointer; là thay nút con chuột thành bàn tay -->
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nam/ao-sweater-phoi-tay-totoshop (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ÁO THUN NAM ATB099012BL</h2>
+
+            <b>Đôi nét: </b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách
+            châu
+            âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>Kích cỡ: </b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br>
+            <br>
+            <b>Giá: </b><b style="color:red;">285.000 VND </b>
+            <br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+
+    </div>
+    <div class="open" align="center" id="open2">
+        <div align="right" style="top:0">
+            <i onclick="close2()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1" src="images/áo nam/at1 (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <h2 style="font-weight:bold;color:red;text-align:center">Áo thun cổ rộng</h2>
+
+            <b>Đôi nét:</b>với thiết kế độc nhất và kiểu dáng thời thượng, nó tạo sự quý phái và độc đáo cho
+            người mặc.
+            <br />
+            <b>Size: </b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá: </b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="open" align="center" id="open3">
+        <div align="right" style="top:0">
+            <i onclick="close3()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nam/at10 (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <h2 style="font-weight:bold;color:red;text-align:center">Áo thun cổ rộng</h2>
+
+            <b>Đôi nét:</b>với thiết kế độc nhất và kiểu dáng thời thượng, nó tạo sự quý phái và độc đáocho
+            người mặc.
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="open" align="center" id="open4">
+        <div align="right" style="top:0">
+            <i onclick="close4()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nam/AT13 (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ao-sweater-phoi-tay</h2>
+
+            <b>Đôi nét:</b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách châu
+            âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="open" align="center" id="open5">
+        <div align="right" style="top:0">
+            <i onclick="close5()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1" src="images/áo nam/at6 (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ao-sweater-phoi-tay</h2>
+
+            <b>Đôi nét:</b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách châu
+            âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+
+    <div class="open" align="center" id="open6">
+        <div align="right" style="top:0">
+            <i onclick="close6()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nữ/ao-hoodie-croptop-tay-dai-totoshop (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ao-sweater-phoi-tay</h2>
+
+            <b>Đôi nét:</b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách
+            châu âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="open" align="center" id="open7">
+        <div align="right" style="top:0">
+            <i onclick="close7()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nữ/ao-somi-croptop-co-vest- totoshop (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ao-sweater-phoi-tay</h2>
+
+            <b>Đôi nét:</b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách
+            châu âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="open" align="center" id="open8">
+        <div align="right" style="top:0">
+            <i onclick="close8()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nữ/ao-somi-nu-co-vest-tay-ngan-totoshop (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ao-sweater-phoi-tay</h2>
+
+            <b>Đôi nét:</b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách
+            châu âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="open" align="center" id="open9">
+        <div align="right" style="top:0">
+            <i onclick="close9()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nữ/ao-thun-nu-form-rong-totoshop 10 (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ao-sweater-phoi-tay</h2>
+
+            <b>Đôi nét:</b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách
+            châu âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div class="open" align="center" id="open10">
+        <div align="right" style="top:0">
+            <i onclick="close10()" style="font-size: 30px; cursor: pointer;" class="fas fa-window-close"></i>
+        </div>
+        <div class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+            <img style="height:30%;width:55%;padding:20px 10px;opacity:1"
+                 src="images/áo nữ/ao-somi-croptop-co-vest- totoshop (2).jpg" />
+        </div>
+        <div align="left" class="col-lg-6 col-md-6 col-ms-6 col-xs-6">
+
+            <h2 style="font-weight:bold;color:red;text-align:center">ao-sweater-phoi-tay</h2>
+
+            <b>Đôi nét:</b>được làm từ sợi nguyên chất, bền đẹp với thời gian, thiết kế theo phong cách
+            châu âu,với độ giãn nở tuyệt đối. đảm bảo sẽ làm hài lòng quý khách
+            <br />
+            <b>size:</b>
+            <select>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>XM</option>
+            </select>
+            <br />
+            <b>Giá:</b><b style="color:red;">100 000vnđ</b>
+            <br /><br /><br /><br /><br /><br />
+            <button onclick="thongbao()">Thêm vào giỏ hàng</button>
+        </div>
+    </div>
+    <div id="al" style="display:none;background-color:aqua;height:15%;width:20%;text-align:center;right:10px;bottom:10%;position:fixed;z-index:3">
+
+        <br />
+        <b>Thêm vào giỏ hàng thành công</b>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:094609371" class="pps-btn-img">
+                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0946091371">
+                0946091371
+            </a>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+﻿body {
+    background-image: url('../images/Lobelia deckenii 1920x1080.jpg');
+    width: 100%;
+}
+header {
+    background-color: aquamarine;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+header a img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+}
+
+main {
+    color: white;
+    margin-top:160px;
+}
+footer {
+    
+    
+   
+}
